@@ -1,6 +1,8 @@
 #include <iostream>
 
+int global_num;
+
 int main() {
-    auto num = 12345678901234567890UL;
-    std::cout << num << std::endl;
+    int local_num;
+    std::cout << global_num << " " << local_num << std::endl;
 }
