@@ -1,5 +1,8 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "beep at the end of message\a\n";
+    cout << sizeof(void*) << endl;
 }
+

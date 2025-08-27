@@ -1,6 +1,21 @@
 #include <iostream>
 #include <typeinfo>
 
+using namespace std;
+
+void references() {
+    cout << endl << "REFERENCES" << endl;
+
+    int a = 1337;
+    int* a_ptr = &a;
+    int& a_ref = a;
+    
+    cout << "a_ptr = " << a_ptr << endl;
+    cout << "a_ref = " << a_ref << endl;
+    cout << "*a_ptr = " << *a_ptr << endl;
+    cout << "&a_ref = " << &a_ref << endl;
+}
+
 void arrays_and_ptrs() {
     
     std::cout << std::endl << "ARRAYS AND PTRS" << std::endl;
@@ -65,5 +80,6 @@ int main() {
     function_pointers();
     null();
     arrays_and_ptrs();
+    references();
     return 0;
 }
